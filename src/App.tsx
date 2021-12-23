@@ -22,11 +22,12 @@ render(){
                   readonly={true}
                   eventSettings={{ dataSource: obj }}
                   selectedDate={new Date()}
+                  agendaDaysCount={3}
                 >
                   <ViewsDirective>
-                    <ViewDirective option="Week" />
+                    <ViewDirective option="Month" />
                   </ViewsDirective>
-                  <Inject services={[Day, Week, WorkWeek, Month]} />
+                  <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
                 </ScheduleComponent>
               </Col>
             </Row>
