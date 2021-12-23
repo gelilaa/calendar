@@ -4,13 +4,14 @@ const obj = [
     Subject: "Workshop-HTML-CSS",
     StartTime: new Date(2022, 0, 16, 10, 0),
     EndTime: new Date(2022, 0, 16, 12, 0),
+    Description: "test one two",
     IsAllDay: false,
   },
   {
     Id: 3,
-    Subject: "date now",
-    StartTime: new Date(2015, 1, 11, 9, 0),
-    EndTime: new Date(2015, 1, 11, 10, 0),
+    Subject: "Debugging-2",
+    StartTime: new Date(2022, 0, 16, 12, 0),
+    EndTime: new Date(2022, 0, 16, 16, 0),
     IsAllDay: false,
   },
   {
