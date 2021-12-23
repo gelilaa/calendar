@@ -3,8 +3,8 @@ const obj = [
     Id: 2,
     Subject: "Workshop-HTML-CSS",
     StartTime: new Date(2022, 0, 16, 10, 0),
-    EndTime: new Date(2022, 0, 16, 12, 0),
-    Description: "test one two",
+    EndTime: new Date(2022, 0, 16, 11, 45),
+    Description: "a workshop that will go in depth with HTML and CSS",
     IsAllDay: false,
   },
   {
@@ -16,9 +16,9 @@ const obj = [
   },
   {
     Id: 4,
-    Subject: "Vacation",
-    StartTime: new Date(2018, 1, 13, 9, 0),
-    EndTime: new Date(2018, 1, 13, 10, 0),
+    Subject: " Debugging-2",
+    StartTime: new Date(2022, 0, 2, 12, 0),
+    EndTime: new Date(2022, 0, 2, 16, 0),
     IsAllDay: false,
   },
 ];

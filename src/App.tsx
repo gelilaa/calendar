@@ -1,25 +1,24 @@
 import React  from 'react';
+import { Col} from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import './App.css';
 import { ScheduleComponent, Day, Week, WorkWeek, Month, Inject,Agenda, ViewsDirective, ViewDirective } from '@syncfusion/ej2-react-schedule';
 //import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
-import { Container, Row, Col,Image } from "react-bootstrap";
 import obj from "./data"
+import  Navbar  from './components/header';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default class App extends React.Component{
  
 render(){
         return (
-          <Container fluid="md">
+          <Container fluid>
+            <Navbar></Navbar>
             <Row>
               <Col>
-                HackYourFuture Lab @ Antwerp Class Calendar
-                <Image
-                  src="https://github.com/gelilaa/calendar/blob/master/src/assets/logo.png"
-                  fluid
-                />
-              </Col>
-              <Col xs={5}>
                 <ScheduleComponent
+                  style={{ backgroundColor: "rgb(74, 80, 187);" }}
                   readonly={true}
                   eventSettings={{ dataSource: obj }}
                   selectedDate={new Date()}
